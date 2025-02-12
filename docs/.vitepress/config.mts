@@ -6,7 +6,7 @@ import path from 'path';
 export default defineConfig({
   title: "CPOS",
   description: "CPOS",
-  base: process.env.NODE_ENV === 'production' ? '/your-repo-name/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/cpos-doc/' : '/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
