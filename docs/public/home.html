@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolPotOS - CP_Kernel</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="header bg-black">
+<ul class="nav">
+    <li><h3>CoolPotOS</h3></li>
+    <li><a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+            <path fill="#666666"
+                  d="M4 19v-7.375L3 12.4q-.35.25-.75.2t-.65-.4t-.2-.75t.375-.65L4 9.1V7q0-.425.288-.713T5 6t.713.288T6 7v.575l4.775-3.65Q11.325 3.5 12 3.5t1.225.425l9 6.875q.325.25.375.65t-.2.75q-.25.325-.65.375t-.725-.2L20 11.625V19q0 .825-.587 1.413T18 21H6q-.825 0-1.412-.587T4 19m2 0h5v-3q0-.425.288-.712T12 15t.713.288T13 16v3h5v-8.9l-6-4.575L6 10.1zm0 0h12zM5.3 5q-.575 0-.888-.475t-.037-.975q.425-.725 1.113-1.137T7 2q.275 0 .525-.137t.375-.388q.125-.225.338-.35T8.725 1q.575 0 .875.475t.025.975q-.425.725-1.112 1.138T7 4q-.275 0-.525.125t-.375.4q-.125.225-.325.35T5.3 5"/>
+        </svg>
+        <span class="p-3.5">Home</span>
+    </a></li>
+    <li><a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+            <path fill="#666666"
+                  d="M8 13h8v-2H8zm0 3h8v-2H8zm0 3h5v-2H8zm-2 3q-.825 0-1.412-.587T4 20V4q0-.825.588-1.412T6 2h8l6 6v12q0 .825-.587 1.413T18 22zm7-13h5l-5-5z"/>
+        </svg>
+        <span class="p-3.5">Document</span>
+    </a></li>
+    <li><a href="https://github.com/plos-clan/CoolPotOS">
+        <img width="20px" height="20px" src="github-mark-white.svg" alt="">
+        <span class="p-3.5">GitHub</span>
+    </a></li>
+</ul>
+<header>
+    <div class="content">
+        <h1 style="font-family: 'logo_font', sans-serif;font-weight: bold;" data-aos="zoom-in" data-aos-duration="1000"
+            class="colorful-glow-text">CoolPotOS</h1>
+        <p style="font-size: 1.25rem;" data-aos="fade-up" data-aos-duration="1000">适用于 x86 平台的宏内核操作系统</p>
+    </div>
+    <div class="spacer"></div>
+    <div class="spacer">
+        <a style="height: 35px" class="justify-content-center neon-button" href="/usr/install">
+            Let's GO!
+        </a>
+    </div>
+    <div class="spacer"></div>
+</header>
+<section style="justify-content: center">
+    <div class="container">
+        <div class="row g-4" style="align-items: stretch;">
+            <div class="col-lg-4 col-md-6 col-12 col-lx-4" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card">
+                    <h2 class="svg-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                             class="lucide lucide-code-xml mr-2">
+                            <path d="m18 16 4-4-4-4"></path>
+                            <path d="m6 8-4 4 4 4"></path>
+                            <path d="m14.5 4-5 16"></path>
+                        </svg>
+                        <span>Open Source</span>
+                    </h2>
+                    <hr>
+                    <p>-</p>
+                    <p>我们使用 MIT 开源协议</p>
+                    <p>代码更加开放, 自由</p>
+                    <p><br></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 col-lx-4" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card">
+                    <h2 class="svg-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                  d="M7.5 15H9v-4H7.5v1.25H6v1.5h1.5zm2.5-1.25h8v-1.5h-8zM15 11h1.5V9.75H18v-1.5h-1.5V7H15zM6 9.75h8v-1.5H6zM8 21v-2H4q-.825 0-1.412-.587T2 17V5q0-.825.588-1.412T4 3h16q.825 0 1.413.588T22 5v12q0 .825-.587 1.413T20 19h-4v2zm-4-4h16V5H4zm0 0V5z"/>
+                        </svg>
+                        <span>Bootloader</span>
+                    </h2>
+                    <hr>
+                    <p>-</p>
+                    <p>使用轻量的现代引导器可以适配更多的实体机环境</p>
+                    <p><br></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 col-lx-4" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card">
+                    <h2 class="svg-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                  d="M4 20v-7zm16 0v-7zM19 8q.425 0 .713-.288T20 7t-.288-.712T19 6t-.712.288T18 7t.288.713T19 8m0 2q-1.275 0-2.137-.862T16 7q0-1.25.863-2.125T19 4q1.25 0 2.125.875T22 7q0 1.275-.875 2.138T19 10m-7-3q.625 0 1.063-.425T13.5 5.5q0-.625-.437-1.062T12 4q-.65 0-1.075.438T10.5 5.5q0 .65.425 1.075T12 7m0 2q-1.475 0-2.488-1.012T8.5 5.5q0-1.45 1.013-2.475T12 2q1.45 0 2.475 1.025T15.5 5.5q0 1.475-1.025 2.488T12 9m-4 4.375q0 .75.8 1.75T12 18.3q2.35-2.125 3.175-3.125t.825-1.8q0-.575-.375-.975T14.7 12q-.35 0-.663.15t-.512.425L12.325 14h-.675l-1.2-1.425q-.2-.275-.513-.425T9.3 12q-.575 0-.937.4T8 13.375m-2 0q0-1.325.9-2.35T9.3 10q.775 0 1.488.35T12 11.3q.5-.6 1.2-.95t1.5-.35q1.5 0 2.4 1.038t.9 2.337q0 1.325-.962 2.613T13.1 20L12 21l-1.1-1q-3.025-2.75-3.963-4.025T6 13.375M5 8q.425 0 .713-.288T6 7t-.288-.712T5 6t-.712.288T4 7t.288.713T5 8m7.075 14v-2H20v-7h-2.95v-2H20q.825 0 1.413.588T22 13v8q0 .425-.288.713T21 22zM4 20h8.075v2H3q-.425 0-.712-.288T2 21v-8q0-.825.575-1.412T4 11h2.95v2H4zm1-10q-1.275 0-2.138-.862T2 7q0-1.25.863-2.125T5 4q1.25 0 2.125.875T8 7q0 1.275-.875 2.138T5 10m14-3"/>
+                        </svg>
+                        <span>Contributors</span>
+                    </h2>
+                    <hr>
+                    <p>-</p>
+                    <p>CoolPotOS目前拥有12+贡献者们</p>
+                    <p>隶属于庞大的plos-clan社区</p>
+                    <p><br></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 col-lx-4" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card">
+                    <h2 class="svg-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
+                               strokeWidth="1.5" color="currentColor">
+                                <path d="M5.143 14A7.8 7.8 0 0 1 4 9.919C4 5.545 7.582 2 12 2s8 3.545 8 7.919A7.8 7.8 0 0 1 18.857 14M7.383 17.098c-.092-.276-.138-.415-.133-.527a.6.6 0 0 1 .382-.53c.104-.041.25-.041.54-.041h7.656c.291 0 .436 0 .54.04a.6.6 0 0 1 .382.531c.005.112-.041.25-.133.527c-.17.511-.255.767-.386.974a2 2 0 0 1-1.2.869c-.238.059-.506.059-1.043.059h-3.976c-.537 0-.806 0-1.043-.06a2 2 0 0 1-1.2-.868c-.131-.207-.216-.463-.386-.974M15 19l-.13.647c-.14.707-.211 1.06-.37 1.34a2 2 0 0 1-1.113.912C13.082 22 12.72 22 12 22s-1.082 0-1.387-.1a2 2 0 0 1-1.113-.913c-.159-.28-.23-.633-.37-1.34L9 19"/>
+                                <path d="M8.25 9.75L10.5 12v4m-2.25-5.5a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5m7.5-.75L13.5 12v4m2.25-5.5a.75.75 0 1 1 0-1.5a.75.75 0 0 1 0 1.5"/>
+                            </g>
+                        </svg>
+                        <span>Optimize 3</span>
+                    </h2>
+                    <hr>
+                    <p>-</p>
+                    <p>支持使用O3级别优化构建</p>
+                    <p style="font-style: italic;text-decoration: line-through;">一次性程序强制重启, 高度优化性能</p>
+                    <p style="font-style: italic;">来自0.4.2版本的纯整活 :D</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<section>
+    <div class="container">
+        <h1 style="color: white" data-aos="fade-up" data-aos-duration="1000" class="text-center">OS Model</h1>
+        <h4 style="color: #5b5b5b; font-weight: lighter" data-aos="fade-up" data-aos-duration="1000"
+            class="text-center">About operation system</h4>
+        <div class="section">
+            <img class="image-section" data-aos="fade-down" src="vfs_code.png" alt="">
+            <div class="text-section" data-aos="fade-down">
+                <h3 style="color: white" class="text-center">Virtual File System</h3>
+                <p style="color: white" class="text-center text-white-50">虚拟文件系统接口</p>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="section">
+            <div class="text-section" data-aos="fade-down">
+                <h3 style="color: white" class="text-center">IIC Driver</h3>
+                <p style="color: white" class="text-center text-white-50">串行通信总线驱动</p>
+            </div>
+            <img class="image-section" data-aos="fade-down" src="iic_code.png" alt="">
+        </div>
+        <div class="spacer"></div>
+        <div class="section">
+            <img class="image-section" data-aos="fade-down" src="elf_code.png" alt="">
+            <div class="text-section" data-aos="fade-down">
+                <h3 style="color: white" class="text-center">Elf parse</h3>
+                <p style="color: white" class="text-center text-white-50">elf可执行文件格式支持</p>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="section">
+            <img width="100%" height="auto" src="https://github-readme-stats.vercel.app/api/pin/?username=xiaoyi1212&amp;repo=CoolPotOS&amp;title_color=ffffff&amp;text_color=c9cacc&amp;icon_color=2bbc8a&amp;bg_color=1d1f21" alt="">
+        </div>
+    </div>
+</section>
+<hr>
+<footer>
+    <div class="container">
+        <p>MIT Licence @2025 - website plos-clan & 凤梨团队</p>
+    </div>
+    <div class="spacer"></div>
+</footer>
+<script src="https://cdn.bootcdn.net/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

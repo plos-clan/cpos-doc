@@ -1,0 +1,7 @@
+docs/dist
+docs/.vitepress/dist
+docs/.vitepress/cache
+docs/dist
+.idea/
+.vscode/
+node_modules/
