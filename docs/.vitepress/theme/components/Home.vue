@@ -1,5 +1,5 @@
 <template>
-    <iframe src="/home.html"></iframe>
+    <iframe src="/cpos-doc/home.html"></iframe>
 </template>
 
 <style scoped>
